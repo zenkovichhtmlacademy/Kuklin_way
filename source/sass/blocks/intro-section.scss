@@ -89,12 +89,13 @@
   }
 }
 
-.intro-section__button {
+.intro-section__link {
   @include button-text;
   width: 280px;
   text-align: left;
   padding: 20px 0 20px 40px;
   position: relative;
+  text-decoration: none;
 
   @media (min-width:$mobile-width) {
     margin: 0 16px;
