@@ -1,0 +1,11 @@
+.travels-wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 416px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 390px;
+  }
+}

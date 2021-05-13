@@ -1,0 +1,21 @@
+.prices-section__wrapper {
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width:$tablet-width) {
+    width: $tablet-width;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 125px;
+  }
+
+  @media(min-width: $desktop-width) {
+  width: $desktop-content-width;
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 138px;
+  justify-content: space-between;
+  }
+}

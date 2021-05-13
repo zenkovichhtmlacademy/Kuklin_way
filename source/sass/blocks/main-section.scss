@@ -1,0 +1,31 @@
+.main-section {
+  position: relative;
+  background: url("../../img/main-background-desktop.jpg") no-repeat;
+
+
+  @media(min-width: $mobile-width) {
+    background-size: 100% 235px;
+    min-height: 235px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 344px;
+    background: url("../../img/main-background-tablet.jpg") no-repeat;
+    background-size: 100% 344px;
+  }
+
+  @media(min-width: $desktop-width) {
+    background-size: 100% 860px;
+    min-height: 860px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-section__wrapper {
+  @media(min-width: $desktop-width) {
+    width: $desktop-content-width;
+    margin: 0 auto;
+
+  }
+}

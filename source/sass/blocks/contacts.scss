@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width:$tablet-width) {
+    width: 352px;
+  }
+
+  @media (min-width:$desktop-width) {
+  width: 390px;
+  }
+}
+
+.contacts__title {
+  @include footer-title;
+}
+
+
+.contacts__link {
+  color: $button-orange;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
+}

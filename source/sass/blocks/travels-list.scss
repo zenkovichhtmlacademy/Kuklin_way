@@ -1,0 +1,7 @@
+.travels-list__item {
+  color: $text-grey;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,35 @@
+.text-review {
+  width: 382px;
+  height: 337px;
+  // position: absolute;
+  // top: 20%;
+  // right: 50px;
+  background-color: $text-white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media(min-width:$desktop-width) {
+    padding: 30px;
+  }
+}
+
+.text-review__title {
+  @media(min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 0;
+  }
+}
+
+.text-review__content {
+  font-size: 14px;
+  line-height: 28px;
+  color: $review-text;
+
+  @media(min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}

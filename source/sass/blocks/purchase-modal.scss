@@ -1,0 +1,65 @@
+.purchase-modal {
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/tour-modal-background-img.jpg") no-repeat;
+    background-size: 338px 444px;
+    width: 728px;
+    min-height: 444px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    right: 50%;
+  }
+}
+
+.purchase-modal__title {
+  @media(min-width: $desktop-width) {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 170%;
+    color: $purchase-modal-title;
+    margin-top: 0;
+  }
+}
+
+.purchase-modal__form {
+
+  @media (min-width: $desktop-width) {
+    width: 390px;
+    min-height: 444px;
+    background-color: $purchase-modal-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.purchase-modal__input {
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+}
+
+.purchase-modal__button {
+  @media (min-width: $desktop-width) {
+    background-color: $button-orange;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    color: $text-white;
+    text-transform: uppercase;
+    padding: 18px 40px 17px 40px;
+    text-align: center;
+  }
+}
+
+.purchase-modal--hidden {
+  display: none;
+}

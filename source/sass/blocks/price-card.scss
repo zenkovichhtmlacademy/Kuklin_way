@@ -1,0 +1,53 @@
+.price-card {
+  order: 0;
+
+  @media(min-width: $tablet-width) {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  @media(min-width: $desktop-width) {
+    order: 0;
+    width: 370px;
+    border-radius: 6px;
+  }
+}
+
+.price-card__title {
+
+  @media (min-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  @media(min-width: $desktop-width) {
+    @include section-title;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
+
+.price-card__content {
+  color: $review-text;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 14px;
+  }
+
+  @media(min-width: $desktop-width) {
+    text-align: initial;
+    padding: 0px 36px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    margin-bottom: 60px;
+  }
+}
+
+.price-card__link {
+  text-decoration: none;
+  color: $text-black;
+}

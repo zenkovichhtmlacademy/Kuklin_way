@@ -1,0 +1,22 @@
+@mixin section-title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+}
+
+@mixin button-text {
+  background-color: $button-orange;
+  border: none;
+  color: inherit;
+  font: inherit;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@mixin footer-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $text-black;
+}

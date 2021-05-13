@@ -1,0 +1,14 @@
+.footer__wrapper {
+  margin: 0 auto;
+  display: flex;
+
+  @media (min-width:$tablet-width) {
+    width: $tablet-width;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,22 @@
+.countries-list {
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, $card-border 0%, 80%, $text-white 80%);
+  border-image-slice: 1;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.countries-list__item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $card-border;
+  margin-right: 99px;
+}
+
+.countries-list__item a {
+  text-decoration: none;
+  color: inherit;
+}

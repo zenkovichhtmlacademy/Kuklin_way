@@ -1,0 +1,25 @@
+.travel-description__wrapper {
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  min-height: 574px;
+  }
+}
+
+
+.travel-description__wrapper--closed {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

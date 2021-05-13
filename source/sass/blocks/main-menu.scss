@@ -1,0 +1,42 @@
+.main-menu {
+  display: flex;
+  list-style: none;
+  color: $text-black;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  @media(min-width: $mobile-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+}
+
+.main-menu--closed {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
+
+.main-menu__item {
+  margin-right: 40px;
+}
+
+.main-menu__item a {
+  color: $text-black;
+  text-decoration: none;
+}
+
+.main-menu__item:last-child a {
+  text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+.card {
+  @media(min-width: $mobile-width) {
+    margin-bottom: 35px;
+  }
+
+
+  @media (min-width:$tablet-width) {
+    margin-right: 29px;
+    margin-bottom: 19px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+    margin-bottom: 110px;
+  }
+}
+
+.card__content {
+  text-align: center;
+  margin: -39px 70px 0 70px;
+  padding: 10px 0 10px 0;
+  background-color: white;
+  position: relative;
+}
+
+.card__content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.card:nth-child(2n+5) {
+  @media(min-width: $tablet-width) {
+    margin: auto;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-right: 60px;
+    margin-bottom: 110px;
+    margin-left: 0;
+  }
+}

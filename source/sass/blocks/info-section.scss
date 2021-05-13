@@ -1,0 +1,23 @@
+.info-section {
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+  width:390px;
+  }
+}
+
+.info-section__title {
+  @include footer-title;
+}
+
+.info-section__content {
+  color: $text-grey;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}

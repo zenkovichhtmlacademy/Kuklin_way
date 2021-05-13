@@ -1,0 +1,21 @@
+.questions-section__wrapper {
+  background: url("../../img/modal-background-img.jpg") no-repeat;
+  position: relative;
+  margin: 0 auto;
+
+  @media(min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 455px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+  width: $desktop-content-width;
+  margin: 0 auto;
+  position: relative;
+  background: url("../../img/modal-background-img.jpg") no-repeat;
+  height: 455px;
+  margin-bottom: 80px;
+  }
+}

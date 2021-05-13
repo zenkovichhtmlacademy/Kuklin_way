@@ -1,0 +1,132 @@
+.intro-section__wrapper {
+  @media (min-width: $mobile-width) {
+    width: $mobile-width;
+    margin: 0 auto;
+  }
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $tablet-width;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 425px;
+  }
+
+
+}
+
+.intro-section {
+  color: $text-white;
+  height: auto;
+
+
+
+
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 425px;
+    height: auto;
+    margin-left: auto;
+    padding: 50px 54px 51px 52px;
+    text-align: left;
+  }
+}
+
+
+.intro-section__title {
+
+  @media (min-width:$mobile-width) {
+    padding: 103px 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  @media(min-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  @media(min-width: $desktop-width) {
+    @include section-title;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.intro-section__content {
+  font-size: 16px;
+  line-height: 170%;
+
+  @media(min-width:$mobile-width) {
+    color: $description-grey;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  @media(min-width:$tablet-width) {
+    padding: 0 185px;
+    text-align: center;
+    color: $text-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    padding: 0;
+    color: $text-white;
+    text-align: left;
+  }
+}
+
+.intro-section__button {
+  @include button-text;
+  width: 280px;
+  text-align: left;
+  padding: 20px 0 20px 40px;
+  position: relative;
+
+  @media (min-width:$mobile-width) {
+    margin: 0 16px;
+    width: 288px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+  }
+
+  &::before {
+    content: "";
+    background: url("../../img/arrow-icon.svg") no-repeat;
+    position: absolute;
+    top: 19px;
+    right: 30px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.intro-section__button a {
+  @include button-text;
+  text-decoration: none;
+}
